@@ -1,24 +1,30 @@
-# neow3j-boilerplate-contracts
+# neow3j-apac-workshop
 
-This is a boilerplate project setup for Java smart contracts. It brings the minimum amount of code
-to compile and test a "Hello World" smart contract for Neo N3.
+This is the source code for the workshop **Coding Smart Contracts in Java/Kotlin** of
+the **[Neo APAC Hackathon](https://hackathon.neo.org/)**. It contains example code to show how
+basic concepts (e.g., ownership, storage, contract calling, etc.) can be implemented on a Neo N3
+smart contract in Java.
+
+If you want to develop your own Neo N3 smart contracts in Java, you can use the
+[neow3j-boilerplate-contracts](https://github.com/neow3j/neow3j-boilerplate-contracts) repository as
+a template to get started.
 
 ## Quickstart
 
-[Java 8](https://adoptium.net/) (or higher) is required.  
+[Java 8](https://adoptium.net/) (or higher) is required.
 [Docker](https://www.docker.com/products/docker-desktop) is required for running smart contract
 tests.
 
 #### 1. **Clone this git repo:**
 
 ```bash
-git clone https://github.com/neow3j/neow3j-boilerplate-contracts.git
+git clone https://github.com/neow3j/neow3j-apac-workshop.git
 ```
 
 #### 2. **Go to the project directory:**
 
 ```bash
-cd neow3j-boilerplate-contracts
+cd neow3j-apac-workshop
 ```
 
 #### 3. **Compile the smart contract:**
@@ -30,7 +36,9 @@ cd neow3j-boilerplate-contracts
 #### 4. **You will see the following output in the directory `./build/neow3j`:**
 
 ```bash
-$ ls -la build/neow3j 
+$ ls -la build/neow3j
+```
+```
 total 24
 drwxr-xr-x  5 user  wheel  160 23 Feb 17:40 .
 drwxr-xr-x  7 user  wheel  224 23 Feb 17:40 ..
@@ -47,7 +55,7 @@ drwxr-xr-x  7 user  wheel  224 23 Feb 17:40 ..
 
 #### 6. **Deploy the contract**
 
-- Run a local [Neo Express](https://github.com/neo-project/neo-express) instance. The project 
+- Run a local [Neo Express](https://github.com/neo-project/neo-express) instance. The project
   includes a Neo Express configuration file.
 - Fund Alice's account: `neoxp transfer 100 GAS genesis alice`
 - Go to the `com.axlabs.boilerplate.Deployment` class and run it.
